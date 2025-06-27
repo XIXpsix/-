@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace экзамен
+{
+    class Extensions
+    {
+        public static void ForEach<T>(this Enumerable<T>, seq , Action<t> action)
+        {
+            foreach (var item in seq) action(item);
+        }
+    }
+}

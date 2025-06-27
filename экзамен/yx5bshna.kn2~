@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace экзамен
+{
+    class ComputerNetwork
+    {
+        public int Stations { get; set; }
+        public double Distance { get; set; }
+        public ComputerNetwork(int stations, double distance)
+        {
+            Stations = stations;
+            Distance = distance;
+        }
+        public virtual double Q()
+        {
+            return Stations * Distance;
+        }
+    }
+}

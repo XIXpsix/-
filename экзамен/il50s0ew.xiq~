@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace экзамен
+{
+    class AdvancedNetwork : ComputerNetwork
+    {
+        public double Speed { get; set; }
+        public AdvancedNetwork (int stations, double distations, double speed) :base (stations, distance)
+        {
+            Speed = speed;
+        }
+        public double Q()
+        {
+            return Q() * Speed;
+        }
+    }
+}
